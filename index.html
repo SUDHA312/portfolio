@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+             
+            <nav>
+                <p class="name">SUDHAKAR B H</p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#cantact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Java Full Stack Web Developer</p>
+                <h2>Hi I am  <span>Sudhakar</span> B H</h2><br>
+                <a href="https://drive.google.com/file/d/1KFWpPQu5piPDIkMl0tggCYk_jSn03_Th/view?usp=drive_link" download class="btn btn2">Download Resume</a><br>
+                <div class="space"><a href="https://www.linkedin.com/in/sudhakar-b-h-a35867258/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/SUDHA312"><i class="fa-brands fa-github"></i></a></div>
+                 
+            </div>
+        </div>
+    </div>
+    <!/----about*****/>
+    <div id="about">
+        <div class="container">
+          <div class="row">
+            <!-- About Image Section -->
+            <div class="about-col-1">
+              <img src="IMG_02.jpg" alt="About Me Image">
+            </div>
+      
+            <!-- About Content Section -->
+            <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p class="paragraph">
+                Motivated and detail-oriented Computer Science graduate with a strong foundation in Core 
+                Java, JavaScript, HTML, and CSS. Dedicated to delivering efficient and innovative software 
+                solutions. Seeking the role of Associate System Engineer to leverage programming skills and 
+                contribute to organizational success.
+              </p>
+      
+              <!-- Tab Titles -->
+              <div class="tab-title">
+                <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+              </div>
+      
+              <!-- Skills Tab Content -->
+              <div class="tab-content active-tab" id="Skills">
+                <ul id="skills-list">
+                  <li>
+                    <img src="java-logo-png.png" alt="Java Logo" class="logo">
+                    <p><span class="java">JAVA</span><br>Basic knowledge of Object-Oriented Programming and problem-solving.</p>
+                  </li>
+                  <li>
+                    <img src="javascript-logo.png" alt="JavaScript Logo" class="logo">
+                    <P><span class="javascript">JavaScript</span><br>Understanding of client-side scripting and dynamic web functionality.</p>
+                  </li>
+                  <li>
+                    <img src="html.png" alt="HTML Logo" class="logo">
+                    <p><span class="html">HTML</span><br>Experience in creating simple and structured web pages.
+                    </li></p>
+                  </li>
+                  <li>
+                    <img src="css-3.png" alt="CSS Logo" class="logo">
+                    <p><span class="css">CSS</span><br>Familiar with styling web pages and creating responsive designs.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+     <script>
+      function opentab(tabName) {
+    // Get the tab content element
+    const tabContent = document.getElementById(tabName);
+
+    // Toggle the visibility of the tab content
+    if (tabContent.classList.contains('active-tab')) {
+        tabContent.classList.remove('active-tab'); // Hide the content
+    } else {
+        tabContent.classList.add('active-tab'); // Show the content
+    }
+}  
+
+var sidemeu =document.getElementById("sidemenu");
+function openmenu(){
+sidemeu.style.right = "0";
+}
+
+function closemenu(){
+sidemeu.style.right = "-200px";
+}
+    </script>
+
+    <!-------------services-------->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1> 
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>Web Development</h2>
+            <p class="service-discription">Development of custom web pages. Using current technology and libraries of the labor field.</p>
+            
+          </div>  
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Android Development</h2>
+            <p class="service-discription2">Simplicity meets functionality Crafting simplicity efficient apps with seamless database operations.</p>
+          </div>    
+        </div>  
+    </div>
+ </div>
+
+ <!-----------projects---------->
+ <div id="project">
+
+    <div class="container">
+        <h1 class="sub-title">My projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="AR_IMG.jpg">
+                <div class="layer">
+                    <h3>AR Architecture App</h3>
+                    <p>unity</p>
+                    <a href="https://github.com/SUDHA312/AR-ARKTECHT-APP-master">
+                        <i class="fa-solid fa-link"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="EMP_IMG.jpg">
+                <div class="layer">
+                    <h3 >Employee Management System</h3>
+                    <p>java</p>
+                    <a href="https://github.com/SUDHA312/Employee-management-system">
+                        <i class="fa-solid fa-link"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="CNT_IMG.jpg">
+                <div class="layer">
+                    <h3 >Contact Management App</h3>
+                    <p>Android</p>
+                    <a href="https://github.com/SUDHA312/Contact-Management-App">
+                        <i class="fa-solid fa-link"></i>
+                    </a>
+                </div>
+            </div>
+        </div> 
+        <a href="https://github.com/SUDHA312" class="btn">See more</a>
+    </div>
+ </div>
+
+ <!--------------contact---------------->
+ <div id="cantact">
+    <div class="container">
+        <div class="contact-left">
+       <h1>Contact me</h1>
+       <p><i class="fa-solid fa-envelope"></i>sudhakarbh700@gmail.com</p>
+       <p><i class="fa-solid fa-phone"></i> 6363105684</p>
+        <div class="contact-right">
+         <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+         </form>   
+         <span id="msg">
+
+         </span>
+        </div>
+    </div>
+    <div class="copyright">
+            <a href="https://www.instagram.com/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.link/330iky"><i class="fa-brands fa-whatsapp"></i></a>
+             
+        <p>copyright @ Sudhakar Made by with <i class="fa-solid fa-heart"></i> passion on webdesign </p>
+    </div>
+ </div>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxMzqrRF6qfpr_790mFJh3Dczj0DlE4QW4bWJv0PMZ-Voeg0V9qgiZyOvJZxh9w5SVp3Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const mg= document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>  {
+            console.log("Success!",response);
+            mg.innerHTML="Message send Successfully";
+
+        setTimeout(()=>{
+            mg.innerHTML="";
+        },5000);
+        form.reset();
+        })
+        .catch(error => console.error('Error!', error.message));
+    });
+
+    const doPost = (e) => {
+    const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+    const data = JSON.parse(e.postData.contents);
+    sheet.appendRow([data.name, data.email]);
+    return ContentService.createTextOutput("Success");
+};
+  </script>
+</body>
+</html>
